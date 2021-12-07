@@ -1,0 +1,700 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+  background-color: burlywood;
+  color: black;
+}
+
+/* PRIMERA PAGINA INDEX */
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: "titulo titulo titulo" "menuCostado contenidoPagina contenidoPagina" "carrusel carrusel carrusel" "pieDePagina pieDePagina pieDePagina";
+}
+
+.contenedor header {
+  background-color: #487240;
+  color: #bd8b3f;
+  font-style: italic;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 5px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: titulo;
+  background-image: -webkit-gradient(linear, left top, right top, from(#487240), to(#deb887));
+  background-image: linear-gradient(to right, #487240, #deb887);
+}
+
+.contenedor header h2 {
+  font-weight: bold;
+}
+
+.contenedor main {
+  background-color: #bd8b3f;
+  padding: 22px;
+  border-radius: 5px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: contenidoPagina;
+  text-align: center;
+}
+
+.contenedor aside {
+  background-color: #487240;
+  padding: 0;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: menuCostado;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#487240), to(#deb887));
+  background-image: linear-gradient(to right, #487240, #deb887);
+}
+
+.contenedor aside li {
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.contenedor aside li a {
+  color: #487240;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.123rem;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  line-height: 45px;
+}
+
+.contenedor aside li a:hover {
+  background-color: #bd8b3f;
+  border-radius: 7px;
+}
+
+.contenedor div {
+  background-color: #bd8b3f;
+  padding: 0px;
+  border-radius: 5px;
+}
+
+.contenedor #carouselExampleControls {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: carrusel;
+}
+
+.contenedor footer {
+  background-color: #487240;
+  color: #b6a68d;
+  padding: 5px;
+  border-radius: 5px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: pieDePagina;
+  text-align: center;
+}
+
+.contenedor footer h3 {
+  font-size: 1.125rem;
+}
+
+/* SEGUNDA PAGINA NOSOTROS */
+.contenedorNosotros {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: "titulo titulo titulo" "menuCostado contenidoPagina contenidoPagina" "mateNosotros1 mateNosotros1 mateNosotros2" "pieDePagina pieDePagina pieDePagina";
+}
+
+.contenedorNosotros header {
+  background-color: #487240;
+  color: #bd8b3f;
+  font-style: italic;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 5px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: titulo;
+  background-image: -webkit-gradient(linear, left top, right top, from(#487240), to(#deb887));
+  background-image: linear-gradient(to right, #487240, #deb887);
+}
+
+.contenedorNosotros header h2 {
+  font-weight: bold;
+}
+
+.contenedorNosotros aside {
+  background-color: #487240;
+  padding: 0;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: menuCostado;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#487240), to(#deb887));
+  background-image: linear-gradient(to right, #487240, #deb887);
+}
+
+.contenedorNosotros aside li {
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.contenedorNosotros aside li a {
+  color: #487240;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.123rem;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  line-height: 45px;
+}
+
+.contenedorNosotros aside li a:hover {
+  background-color: #bd8b3f;
+  border-radius: 7px;
+}
+
+.contenedorNosotros main {
+  background-color: #bd8b3f;
+  padding: 22px;
+  border-radius: 5px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: contenidoPagina;
+  text-align: center;
+}
+
+.contenedorNosotros .mateNosotros1 {
+  height: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: mateNosotros1;
+}
+
+.contenedorNosotros .mateNosotros1 .fotoNosotros1 {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.contenedorNosotros .mateNosotros1 .fotoNosotros1:hover {
+  -webkit-transform: scale(1.07, 1.07) translate(-20px, 0);
+          transform: scale(1.07, 1.07) translate(-20px, 0);
+}
+
+.contenedorNosotros .mateNosotros2 {
+  height: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: mateNosotros2;
+}
+
+.contenedorNosotros .mateNosotros2 .fotoNosotros2 {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.contenedorNosotros .mateNosotros2 .fotoNosotros2:hover {
+  -webkit-transform: scale(1.07, 1.07) translate(20px, 0);
+          transform: scale(1.07, 1.07) translate(20px, 0);
+}
+
+.contenedorNosotros footer {
+  background-color: #487240;
+  color: #b6a68d;
+  padding: 5px;
+  border-radius: 5px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: pieDePagina;
+  text-align: center;
+}
+
+.contenedorNosotros footer h3 {
+  font-size: 1.125rem;
+}
+
+/* TERCERA PAGINA MATES */
+.contenedorMates {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[6];
+      grid-template-rows: repeat(6, auto);
+      grid-template-areas: "titulo titulo titulo" "menuCostado contenidoPagina contenidoPagina" "mateDeCalabaza fotoDelMateCalabaza fotoDelMateCalabaza" "fotoMadera1 fotoMadera1 mateDeMadera" "textoMateDeVidrio fotoMateDeVidrio fotoMateDeVidrio" "pieDePagina pieDePagina pieDePagina";
+}
+
+.mateDeCalabaza {
+  background-color: #bd8b3f;
+  padding: 20px;
+  border-radius: 5px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: mateDeCalabaza;
+  text-align: left;
+}
+
+.fotoDelMateCalabaza {
+  padding: 0;
+  border-radius: 5px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: fotoDelMateCalabaza;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.fotoDelMateCalabaza:hover {
+  -webkit-transform: scale(1.08, 1.08);
+          transform: scale(1.08, 1.08);
+}
+
+.fotoMateCalabaza1 {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.mateDeMadera {
+  background-color: #bd8b3f;
+  padding: 20px;
+  border-radius: 5px;
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: mateDeMadera;
+  text-align: right;
+}
+
+.fotoMadera1 {
+  padding: 0;
+  border-radius: 5px;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: fotoMadera1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.fotoMadera1:hover {
+  -webkit-transform: scale(1.08, 1.08);
+          transform: scale(1.08, 1.08);
+}
+
+.fotoMateMadera1 {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.textoMateDeVidrio {
+  background-color: #bd8b3f;
+  padding: 20px;
+  border-radius: 5px;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: textoMateDeVidrio;
+  text-align: left;
+}
+
+.fotoMateDeVidrio {
+  padding: 0;
+  border-radius: 5px;
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: fotoMateDeVidrio;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.fotoMateVidrio1 {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.fotoMateDeVidrio:hover {
+  -webkit-transform: scale(1.08, 1.08);
+          transform: scale(1.08, 1.08);
+}
+
+/* CUARTA PAGINA CUIDADOS */
+.contenedorCuidados {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[7];
+      grid-template-rows: repeat(7, auto);
+      grid-template-areas: "titulo titulo titulo" "menuCostado contenidoPagina contenidoPagina" "tipsMantencion tipsMantencion tipsMantencion" "videoTips videoTips videoTips" "textoCuradoMate textoCuradoMate textoCuradoMate" "videoCuradoMate videoCuradoMate videoCuradoMate" "pieDePagina pieDePagina pieDePagina";
+}
+
+.tipsMantencion {
+  background-color: #bd8b3f;
+  padding: 20px;
+  border-radius: 5px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: tipsMantencion;
+  text-align: center;
+}
+
+.videoTips {
+  background-color: #bd8b3f;
+  padding: 20px;
+  border-radius: 5px;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: videoTips;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.textoCuradoMate {
+  background-color: #bd8b3f;
+  padding: 20px;
+  border-radius: 5px;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: textoCuradoMate;
+  text-align: center;
+}
+
+.videoCuradoMate {
+  background-color: #bd8b3f;
+  padding: 20px;
+  border-radius: 5px;
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: videoCuradoMate;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* QUINTA PAGINA CONTACTO */
+.contenedorContacto {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: "titulo titulo titulo" "menuCostado contenidoPagina contenidoPagina" "pieDePagina pieDePagina pieDePagina";
+}
+
+.formularios {
+  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formularios label {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 400px) {
+  .contenedor {
+        grid-template-areas: "titulo titulo titulo" "menuCostado menuCostado menuCostado" "contenidoPagina contenidoPagina contenidoPagina" "carrusel carrusel carrusel" "pieDePagina pieDePagina pieDePagina";
+  }
+  .pieDePagina h3 {
+    font-size: 1rem;
+  }
+  .contenedorNosotros {
+        grid-template-areas: "titulo titulo titulo" "menuCostado menuCostado menuCostado" "contenidoPagina contenidoPagina contenidoPagina" "mateNosotros1 mateNosotros1 mateNosotros1" "mateNosotros2 mateNosotros2 mateNosotros2" "pieDePagina pieDePagina pieDePagina";
+  }
+  .fotoNostros1 {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .fotoNosotros1:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .fotoNostros2 {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .fotoNosotros2:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .contenedorMates {
+        grid-template-areas: "titulo titulo titulo" "menuCostado menuCostado menuCostado" "contenidoPagina contenidoPagina contenidoPagina" "mateDeCalabaza mateDeCalabaza mateDeCalabaza" "fotoDelMateCalabaza fotoDelMateCalabaza fotoDelMateCalabaza" "mateDeMadera mateDeMadera mateDeMadera" "fotoMadera1 fotoMadera1 fotoMadera1" "textoMateDeVidrio textoMateDeVidrio textoMateDeVidrio" "fotoMateDeVidrio fotoMateDeVidrio fotoMateDeVidrio" "pieDePagina pieDePagina pieDePagina";
+  }
+  .fotoDelMateCalabaza {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .fotoDelMateCalabaza:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .fotoMadera1 {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .fotoMadera1:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .fotoMateDeVidrio {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .fotoMateDeVidrio:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .contenedorCuidados {
+        grid-template-areas: "titulo titulo titulo" "menuCostado menuCostado menuCostado" "contenidoPagina contenidoPagina contenidoPagina" "tipsMantencion tipsMantencion tipsMantencion" "videoTips videoTips videoTips" "textoCuradoMate textoCuradoMate textoCuradoMate" "videoCuradoMate videoCuradoMate videoCuradoMate" "pieDePagina pieDePagina pieDePagina";
+  }
+  .contenedorContacto {
+        grid-template-areas: "titulo titulo titulo" "menuCostado menuCostado menuCostado" "contenidoPagina contenidoPagina contenidoPagina" "pieDePagina pieDePagina pieDePagina";
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 768px) {
+  .contenedor {
+        grid-template-areas: "titulo titulo titulo" "menuCostado menuCostado menuCostado" "contenidoPagina contenidoPagina contenidoPagina" "carrusel carrusel carrusel" "pieDePagina pieDePagina pieDePagina";
+  }
+  .pieDePagina h3 {
+    font-size: 1rem;
+  }
+  .contenedorNosotros {
+        grid-template-areas: "titulo titulo titulo" "menuCostado menuCostado menuCostado" "contenidoPagina contenidoPagina contenidoPagina" "mateNosotros1 mateNosotros1 mateNosotros1" "mateNosotros2 mateNosotros2 mateNosotros2" "pieDePagina pieDePagina pieDePagina";
+  }
+  .fotoNostros1 {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .fotoNosotros1:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .fotoNostros2 {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .fotoNosotros2:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .contenedorMates {
+        grid-template-areas: "titulo titulo titulo" "menuCostado menuCostado menuCostado" "contenidoPagina contenidoPagina contenidoPagina" "mateDeCalabaza mateDeCalabaza mateDeCalabaza" "fotoDelMateCalabaza fotoDelMateCalabaza fotoDelMateCalabaza" "mateDeMadera mateDeMadera mateDeMadera" "fotoMadera1 fotoMadera1 fotoMadera1" "textoMateDeVidrio textoMateDeVidrio textoMateDeVidrio" "fotoMateDeVidrio fotoMateDeVidrio fotoMateDeVidrio" "pieDePagina pieDePagina pieDePagina";
+  }
+  .fotoDelMateCalabaza {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .fotoDelMateCalabaza:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .fotoMadera1 {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .fotoMadera1:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .fotoMateDeVidrio {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .fotoMateDeVidrio:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .contenedorCuidados {
+        grid-template-areas: "titulo titulo titulo" "menuCostado menuCostado menuCostado" "contenidoPagina contenidoPagina contenidoPagina" "tipsMantencion tipsMantencion tipsMantencion" "videoTips videoTips videoTips" "textoCuradoMate textoCuradoMate textoCuradoMate" "videoCuradoMate videoCuradoMate videoCuradoMate" "pieDePagina pieDePagina pieDePagina";
+  }
+  .contenedorContacto {
+        grid-template-areas: "titulo titulo titulo" "menuCostado menuCostado menuCostado" "contenidoPagina contenidoPagina contenidoPagina" "pieDePagina pieDePagina pieDePagina";
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .contenedor {
+        grid-template-areas: "titulo titulo titulo" "menuCostado menuCostado menuCostado" "contenidoPagina contenidoPagina contenidoPagina" "carrusel carrusel carrusel" "pieDePagina pieDePagina pieDePagina";
+  }
+  .pieDePagina h3 {
+    font-size: 1rem;
+  }
+  .contenedorNosotros {
+        grid-template-areas: "titulo titulo titulo" "menuCostado menuCostado menuCostado" "contenidoPagina contenidoPagina contenidoPagina" "mateNosotros1 mateNosotros1 mateNosotros1" "mateNosotros2 mateNosotros2 mateNosotros2" "pieDePagina pieDePagina pieDePagina";
+  }
+  .fotoNostros1 {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .fotoNosotros1:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .fotoNostros2 {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .fotoNosotros2:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .contenedorMates {
+        grid-template-areas: "titulo titulo titulo" "menuCostado menuCostado menuCostado" "contenidoPagina contenidoPagina contenidoPagina" "mateDeCalabaza mateDeCalabaza mateDeCalabaza" "fotoDelMateCalabaza fotoDelMateCalabaza fotoDelMateCalabaza" "mateDeMadera mateDeMadera mateDeMadera" "fotoMadera1 fotoMadera1 fotoMadera1" "textoMateDeVidrio textoMateDeVidrio textoMateDeVidrio" "fotoMateDeVidrio fotoMateDeVidrio fotoMateDeVidrio" "pieDePagina pieDePagina pieDePagina";
+  }
+  .fotoDelMateCalabaza {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .fotoDelMateCalabaza:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .fotoMadera1 {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .fotoMadera1:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .fotoMateDeVidrio {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .fotoMateDeVidrio:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .contenedorCuidados {
+        grid-template-areas: "titulo titulo titulo" "menuCostado menuCostado menuCostado" "contenidoPagina contenidoPagina contenidoPagina" "tipsMantencion tipsMantencion tipsMantencion" "videoTips videoTips videoTips" "textoCuradoMate textoCuradoMate textoCuradoMate" "videoCuradoMate videoCuradoMate videoCuradoMate" "pieDePagina pieDePagina pieDePagina";
+  }
+  .contenedorContacto {
+        grid-template-areas: "titulo titulo titulo" "menuCostado menuCostado menuCostado" "contenidoPagina contenidoPagina contenidoPagina" "pieDePagina pieDePagina pieDePagina";
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,79 @@
+@mixin prop-contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+}
+
+@mixin prop-menu {
+    aside{
+        background-color: $fondo;
+        padding: 0;
+        border-radius: 5px;
+        letter-spacing: 3px;
+        grid-area: menuCostado;
+        text-align: center;
+        display: flex;
+        position: static;
+        flex-flow: column nowrap;
+        justify-content: center;
+        background-image: linear-gradient(to right, $fondo, #deb887);
+            li{
+                text-transform: uppercase;
+                list-style: none;
+                a{
+                color: $fondo;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 1.123rem;
+                transition: all 0.3s ease 0s;
+                line-height: 45px;
+                }
+                a:hover{
+                background-color: $card;
+                border-radius: 7px;
+                }
+            }
+    }
+}
+
+@mixin prop-titulo {
+    header{
+        background-color: $fondo;
+        color: $card;
+        font-style: italic;
+        padding: 10px;
+        padding-left: 20px;
+        border-radius: 5px;
+        grid-area: titulo;
+        background-image: linear-gradient(to right, $fondo, #deb887);
+        h2{
+            font-weight: bold;
+        }
+    }
+}
+
+@mixin prop-main{
+    main{
+        background-color: $card;
+        padding: 22px;
+        border-radius: 5px;
+        grid-area: contenidoPagina;
+        text-align: center;
+    }
+}
+
+@mixin prop-footer{
+    footer{
+        background-color: $fondo;
+        color: rgb(182, 166, 141);
+        padding: 5px;
+        border-radius: 5px;
+        grid-area: pieDePagina;
+        text-align: center;
+        h3{
+            font-size: 1.125rem;
+        }
+    }
+}
