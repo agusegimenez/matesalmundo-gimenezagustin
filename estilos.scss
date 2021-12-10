@@ -105,7 +105,7 @@ body{
     @include prop-menu;
     @include prop-main;
     .mateDeCalabaza{
-        background-color: rgb(189, 139, 63);
+        background-color: $card;
         padding: 20px;
         border-radius: 5px;
         grid-area: mateDeCalabaza;
@@ -126,7 +126,7 @@ body{
         }
     }
     .mateDeMadera{
-        background-color: rgb(189, 139, 63);
+        background-color: $card;
         padding: 20px;
         border-radius: 5px;
         grid-area: mateDeMadera;
@@ -147,7 +147,7 @@ body{
         }
     }
     .textoMateDeVidrio{
-        background-color: rgb(189, 139, 63);
+        background-color: $card;
         padding: 20px;
         border-radius: 5px;
         grid-area: textoMateDeVidrio;
@@ -174,11 +174,7 @@ body{
 /* CUARTA PAGINA CUIDADOS */
 
 .contenedorCuidados{
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
-    display: grid;
-    grid-gap: 20px;
+    @include prop-contenedor;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(7, auto);
     grid-template-areas:"titulo titulo titulo"
@@ -188,71 +184,71 @@ body{
                         "textoCuradoMate textoCuradoMate textoCuradoMate"
                         "videoCuradoMate videoCuradoMate videoCuradoMate"
                         "pieDePagina pieDePagina pieDePagina";
+    @include prop-titulo;
+    @include prop-menu;
+    @include prop-main;
+    .tipsMantencion{
+        background-color: $card;
+        padding: 20px;
+        border-radius: 5px;
+        grid-area: tipsMantencion;
+        text-align: center;
+    }
+    .videoTips{
+        background-color: $card;
+        padding: 20px;
+        border-radius: 5px;
+        grid-area: videoTips;
+        align-items: center;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+    }
+    .textoCuradoMate{
+        background-color: $card;
+        padding: 20px;
+        border-radius: 5px;
+        grid-area: textoCuradoMate;
+        text-align: center;
+    }
+    .videoCuradoMate{
+        background-color: $card;
+        padding: 20px;
+        border-radius: 5px;
+        grid-area: videoCuradoMate;
+        align-items: center;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+    }
+    @include prop-footer;
 }
 
-.tipsMantencion{
-    background-color: rgb(189, 139, 63);
-    padding: 20px;
-    border-radius: 5px;
-    grid-area: tipsMantencion;
-    text-align: center;
-}
-
-.videoTips{
-    background-color: rgb(189, 139, 63);
-    padding: 20px;
-    border-radius: 5px;
-    grid-area: videoTips;
-    align-items: center;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-}
-
-.textoCuradoMate{
-    background-color: rgb(189, 139, 63);
-    padding: 20px;
-    border-radius: 5px;
-    grid-area: textoCuradoMate;
-    text-align: center;
-}
-
-.videoCuradoMate{
-    background-color: rgb(189, 139, 63);
-    padding: 20px;
-    border-radius: 5px;
-    grid-area: videoCuradoMate;
-    align-items: center;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-}
 
 
 /* QUINTA PAGINA CONTACTO */
 
 .contenedorContacto{
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
-    display: grid;
-    grid-gap: 20px;
+    @include prop-contenedor;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "titulo titulo titulo"
                         "menuCostado contenidoPagina contenidoPagina"
                         "pieDePagina pieDePagina pieDePagina";
+    @include prop-titulo;
+    @include prop-menu;
+    @include prop-main;
+    form{
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        label{
+            font-weight: bold;
+        }
+    }
+    @include prop-footer;
 }
 
-.formularios{
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-}
-
-.formularios label{
-    font-weight: bold;
-}
 
 // MEDIA QUERIES //
 
@@ -264,11 +260,6 @@ body{
                             "carrusel carrusel carrusel"
                             "pieDePagina pieDePagina pieDePagina";
     }
-
-    .pieDePagina h3{
-        font-size: 1rem;
-    }
-
     .contenedorNosotros{
         grid-template-areas: "titulo titulo titulo"
                             "menuCostado menuCostado menuCostado"
@@ -277,22 +268,6 @@ body{
                             "mateNosotros2 mateNosotros2 mateNosotros2"
                             "pieDePagina pieDePagina pieDePagina";
     }
-
-    .fotoNostros1{
-        transition: 1s;
-    }
-    .fotoNosotros1:hover{
-        transform: scale(1.05);
-    }
-
-    .fotoNostros2{
-        transition: 1s;
-    }
-    .fotoNosotros2:hover{
-        transform: scale(1.05);
-    }
-
-
     .contenedorMates{
         grid-template-areas:"titulo titulo titulo"
                             "menuCostado menuCostado menuCostado"
@@ -305,28 +280,6 @@ body{
                             "fotoMateDeVidrio fotoMateDeVidrio fotoMateDeVidrio"
                             "pieDePagina pieDePagina pieDePagina";
     }
-
-    .fotoDelMateCalabaza{
-        transition: 1s;
-    }
-    .fotoDelMateCalabaza:hover{
-        transform: scale(1.05);
-    }
-
-    .fotoMadera1{
-        transition: 1s;
-    }
-    .fotoMadera1:hover{
-        transform: scale(1.05);
-    }
-
-    .fotoMateDeVidrio{
-        transition: 1s;
-    }
-    .fotoMateDeVidrio:hover{
-        transform: scale(1.05);
-    }
-
     .contenedorCuidados{
         grid-template-areas:"titulo titulo titulo"
                             "menuCostado menuCostado menuCostado"
@@ -337,8 +290,6 @@ body{
                             "videoCuradoMate videoCuradoMate videoCuradoMate"
                             "pieDePagina pieDePagina pieDePagina";
     }
-
-
     .contenedorContacto{
         grid-template-areas: "titulo titulo titulo"
                             "menuCostado menuCostado menuCostado"
@@ -356,11 +307,6 @@ body{
                             "carrusel carrusel carrusel"
                             "pieDePagina pieDePagina pieDePagina";
     }
-
-    .pieDePagina h3{
-        font-size: 1rem;
-    }
-
     .contenedorNosotros{
         grid-template-areas: "titulo titulo titulo"
                             "menuCostado menuCostado menuCostado"
@@ -369,22 +315,6 @@ body{
                             "mateNosotros2 mateNosotros2 mateNosotros2"
                             "pieDePagina pieDePagina pieDePagina";
     }
-
-    .fotoNostros1{
-        transition: 1s;
-    }
-    .fotoNosotros1:hover{
-        transform: scale(1.05);
-    }
-
-    .fotoNostros2{
-        transition: 1s;
-    }
-    .fotoNosotros2:hover{
-        transform: scale(1.05);
-    }
-
-
     .contenedorMates{
         grid-template-areas:"titulo titulo titulo"
                             "menuCostado menuCostado menuCostado"
@@ -397,28 +327,6 @@ body{
                             "fotoMateDeVidrio fotoMateDeVidrio fotoMateDeVidrio"
                             "pieDePagina pieDePagina pieDePagina";
     }
-
-    .fotoDelMateCalabaza{
-        transition: 1s;
-    }
-    .fotoDelMateCalabaza:hover{
-        transform: scale(1.05);
-    }
-
-    .fotoMadera1{
-        transition: 1s;
-    }
-    .fotoMadera1:hover{
-        transform: scale(1.05);
-    }
-
-    .fotoMateDeVidrio{
-        transition: 1s;
-    }
-    .fotoMateDeVidrio:hover{
-        transform: scale(1.05);
-    }
-
     .contenedorCuidados{
         grid-template-areas:"titulo titulo titulo"
                             "menuCostado menuCostado menuCostado"
@@ -429,8 +337,6 @@ body{
                             "videoCuradoMate videoCuradoMate videoCuradoMate"
                             "pieDePagina pieDePagina pieDePagina";
     }
-
-
     .contenedorContacto{
         grid-template-areas: "titulo titulo titulo"
                             "menuCostado menuCostado menuCostado"
@@ -448,11 +354,6 @@ body{
                             "carrusel carrusel carrusel"
                             "pieDePagina pieDePagina pieDePagina";
     }
-
-    .pieDePagina h3{
-        font-size: 1rem;
-    }
-
     .contenedorNosotros{
         grid-template-areas: "titulo titulo titulo"
                             "menuCostado menuCostado menuCostado"
@@ -461,22 +362,6 @@ body{
                             "mateNosotros2 mateNosotros2 mateNosotros2"
                             "pieDePagina pieDePagina pieDePagina";
     }
-
-    .fotoNostros1{
-        transition: 1s;
-    }
-    .fotoNosotros1:hover{
-        transform: scale(1.05);
-    }
-
-    .fotoNostros2{
-        transition: 1s;
-    }
-    .fotoNosotros2:hover{
-        transform: scale(1.05);
-    }
-
-
     .contenedorMates{
         grid-template-areas:"titulo titulo titulo"
                             "menuCostado menuCostado menuCostado"
@@ -489,28 +374,6 @@ body{
                             "fotoMateDeVidrio fotoMateDeVidrio fotoMateDeVidrio"
                             "pieDePagina pieDePagina pieDePagina";
     }
-
-    .fotoDelMateCalabaza{
-        transition: 1s;
-    }
-    .fotoDelMateCalabaza:hover{
-        transform: scale(1.05);
-    }
-
-    .fotoMadera1{
-        transition: 1s;
-    }
-    .fotoMadera1:hover{
-        transform: scale(1.05);
-    }
-
-    .fotoMateDeVidrio{
-        transition: 1s;
-    }
-    .fotoMateDeVidrio:hover{
-        transform: scale(1.05);
-    }
-
     .contenedorCuidados{
         grid-template-areas:"titulo titulo titulo"
                             "menuCostado menuCostado menuCostado"
@@ -521,8 +384,6 @@ body{
                             "videoCuradoMate videoCuradoMate videoCuradoMate"
                             "pieDePagina pieDePagina pieDePagina";
     }
-
-
     .contenedorContacto{
         grid-template-areas: "titulo titulo titulo"
                             "menuCostado menuCostado menuCostado"
