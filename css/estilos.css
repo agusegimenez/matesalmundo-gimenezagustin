@@ -401,7 +401,7 @@ body {
   grid-area: fotoDelMateCalabaza;
 }
 
-.contenedorMates .fotoDelMateCalabaza .fotoMateCalabaza1 {
+.contenedorMates .fotoDelMateCalabaza img {
   width: 100%;
   height: auto;
   border-radius: 5px;
@@ -409,9 +409,9 @@ body {
   transition: 1s;
 }
 
-.contenedorMates .fotoDelMateCalabaza .fotoDelMateCalabaza1:hover {
-  -webkit-transform: scale(1.08, 1.08);
-          transform: scale(1.08, 1.08);
+.contenedorMates .fotoDelMateCalabaza img:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
 }
 
 .contenedorMates .mateDeMadera {
@@ -433,12 +433,12 @@ body {
   grid-area: fotoMadera1;
 }
 
-.contenedorMates .fotoMadera1 .fotoMadera1:hover {
-  -webkit-transform: scale(1.08, 1.08);
-          transform: scale(1.08, 1.08);
+.contenedorMates .fotoMadera1 img:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
 }
 
-.contenedorMates .fotoMadera1 .fotoMateMadera1 {
+.contenedorMates .fotoMadera1 img {
   width: 100%;
   height: auto;
   border-radius: 5px;
@@ -465,12 +465,12 @@ body {
   grid-area: fotoMateDeVidrio;
 }
 
-.contenedorMates .fotoMateDeVidrio .fotoMateDeVidrio:hover {
+.contenedorMates .fotoMateDeVidrio img:hover {
   -webkit-transform: scale(1.08, 1.08);
           transform: scale(1.08, 1.08);
 }
 
-.contenedorMates .fotoMateDeVidrio .fotoMateVidrio1 {
+.contenedorMates .fotoMateDeVidrio img {
   width: 100%;
   height: auto;
   border-radius: 5px;
