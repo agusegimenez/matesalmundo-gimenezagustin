@@ -14,7 +14,6 @@ body{
 
 /* PRIMERA PAGINA INDEX */
 
-// prueba de nesting //
 
 .contenedor{
     @include prop-contenedor;
@@ -24,18 +23,18 @@ body{
                         "menuCostado contenidoPagina contenidoPagina"
                         "carrusel carrusel carrusel"
                         "pieDePagina pieDePagina pieDePagina";
-        @include prop-titulo;
-        @include prop-main;
-        @include prop-menu;
-        div{
-            background-color: $card;
-            padding: 0px;
-            border-radius: 5px;
-        }
-        #carouselExampleControls{
-            grid-area: carrusel;
-        }
-        @include prop-footer;
+    @include prop-titulo;
+    @include prop-main;
+    @include prop-menu;
+    div{
+        background-color: $card;
+        padding: 0px;
+        border-radius: 5px;
+    }
+    #carouselExampleControls{
+        grid-area: carrusel;
+    }
+    @include prop-footer;
 }
 
 
@@ -95,11 +94,7 @@ body{
 
 
 .contenedorMates{
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
-    display: grid;
-    grid-gap: 20px;
+    @include prop-contenedor;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, auto);
     grid-template-areas:"titulo titulo titulo"
@@ -108,82 +103,76 @@ body{
                         "fotoMadera1 fotoMadera1 mateDeMadera"
                         "textoMateDeVidrio fotoMateDeVidrio fotoMateDeVidrio"
                         "pieDePagina pieDePagina pieDePagina";
+    @include prop-titulo;
+    @include prop-menu;
+    @include prop-main;
+    .mateDeCalabaza{
+        background-color: rgb(189, 139, 63);
+        padding: 20px;
+        border-radius: 5px;
+        grid-area: mateDeCalabaza;
+        text-align: left;
+    }
+    .fotoDelMateCalabaza{
+        padding: 0;
+        border-radius: 5px;
+        grid-area: fotoDelMateCalabaza;
+        .fotoMateCalabaza1{
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: 1s;
+        }
+        .fotoDelMateCalabaza1:hover{
+            transform: scale(1.08,1.08);
+        }
+    }
+    .mateDeMadera{
+        background-color: rgb(189, 139, 63);
+        padding: 20px;
+        border-radius: 5px;
+        grid-area: mateDeMadera;
+        text-align: right;
+    }
+    .fotoMadera1{
+        padding: 0;
+        border-radius: 5px;
+        grid-area: fotoMadera1;
+        .fotoMadera1:hover{
+            transform: scale(1.08,1.08);
+        }
+        .fotoMateMadera1{
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: 1s;
+        }
+    }
+    .textoMateDeVidrio{
+        background-color: rgb(189, 139, 63);
+        padding: 20px;
+        border-radius: 5px;
+        grid-area: textoMateDeVidrio;
+        text-align: left;
+    }
+    .fotoMateDeVidrio{
+        padding: 0;
+        border-radius: 5px;
+        grid-area: fotoMateDeVidrio;
+        .fotoMateDeVidrio:hover{
+            transform: scale(1.08,1.08);
+        }
+        .fotoMateVidrio1{
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: 1s;
+        }
+    }
+    @include prop-footer;
 }
 
-.mateDeCalabaza{
-    background-color: rgb(189, 139, 63);
-    padding: 20px;
-    border-radius: 5px;
-    grid-area: mateDeCalabaza;
-    text-align: left;
-}
 
-.fotoDelMateCalabaza{
-    padding: 0;
-    border-radius: 5px;
-    grid-area: fotoDelMateCalabaza;
-    transition: 1s;
-}
-
-.fotoDelMateCalabaza:hover{
-    transform: scale(1.08,1.08);
-}
-
-.fotoMateCalabaza1{
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.mateDeMadera{
-    background-color: rgb(189, 139, 63);
-    padding: 20px;
-    border-radius: 5px;
-    grid-area: mateDeMadera;
-    text-align: right;
-}
-
-.fotoMadera1{
-    padding: 0;
-    border-radius: 5px;
-    grid-area: fotoMadera1;
-    transition: 1s;
-}
-
-.fotoMadera1:hover{
-    transform: scale(1.08,1.08);
-}
-
-.fotoMateMadera1{
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.textoMateDeVidrio{
-    background-color: rgb(189, 139, 63);
-    padding: 20px;
-    border-radius: 5px;
-    grid-area: textoMateDeVidrio;
-    text-align: left;
-}
-
-.fotoMateDeVidrio{
-    padding: 0;
-    border-radius: 5px;
-    grid-area: fotoMateDeVidrio;
-    transition: 1s;
-}
-
-.fotoMateVidrio1{
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.fotoMateDeVidrio:hover{
-    transform: scale(1.08,1.08);
-}
 
 /* CUARTA PAGINA CUIDADOS */
 

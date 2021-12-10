@@ -308,7 +308,81 @@ body {
       grid-template-areas: "titulo titulo titulo" "menuCostado contenidoPagina contenidoPagina" "mateDeCalabaza fotoDelMateCalabaza fotoDelMateCalabaza" "fotoMadera1 fotoMadera1 mateDeMadera" "textoMateDeVidrio fotoMateDeVidrio fotoMateDeVidrio" "pieDePagina pieDePagina pieDePagina";
 }
 
-.mateDeCalabaza {
+.contenedorMates header {
+  background-color: #487240;
+  color: #bd8b3f;
+  font-style: italic;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 5px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: titulo;
+  background-image: -webkit-gradient(linear, left top, right top, from(#487240), to(#deb887));
+  background-image: linear-gradient(to right, #487240, #deb887);
+}
+
+.contenedorMates header h2 {
+  font-weight: bold;
+}
+
+.contenedorMates aside {
+  background-color: #487240;
+  padding: 0;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: menuCostado;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#487240), to(#deb887));
+  background-image: linear-gradient(to right, #487240, #deb887);
+}
+
+.contenedorMates aside li {
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.contenedorMates aside li a {
+  color: #487240;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.123rem;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  line-height: 45px;
+}
+
+.contenedorMates aside li a:hover {
+  background-color: #bd8b3f;
+  border-radius: 7px;
+}
+
+.contenedorMates main {
+  background-color: #bd8b3f;
+  padding: 22px;
+  border-radius: 5px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: contenidoPagina;
+  text-align: center;
+}
+
+.contenedorMates .mateDeCalabaza {
   background-color: #bd8b3f;
   padding: 20px;
   border-radius: 5px;
@@ -318,29 +392,29 @@ body {
   text-align: left;
 }
 
-.fotoDelMateCalabaza {
+.contenedorMates .fotoDelMateCalabaza {
   padding: 0;
   border-radius: 5px;
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: fotoDelMateCalabaza;
+}
+
+.contenedorMates .fotoDelMateCalabaza .fotoMateCalabaza1 {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.fotoDelMateCalabaza:hover {
+.contenedorMates .fotoDelMateCalabaza .fotoDelMateCalabaza1:hover {
   -webkit-transform: scale(1.08, 1.08);
           transform: scale(1.08, 1.08);
 }
 
-.fotoMateCalabaza1 {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.mateDeMadera {
+.contenedorMates .mateDeMadera {
   background-color: #bd8b3f;
   padding: 20px;
   border-radius: 5px;
@@ -350,29 +424,29 @@ body {
   text-align: right;
 }
 
-.fotoMadera1 {
+.contenedorMates .fotoMadera1 {
   padding: 0;
   border-radius: 5px;
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: fotoMadera1;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
-.fotoMadera1:hover {
+.contenedorMates .fotoMadera1 .fotoMadera1:hover {
   -webkit-transform: scale(1.08, 1.08);
           transform: scale(1.08, 1.08);
 }
 
-.fotoMateMadera1 {
+.contenedorMates .fotoMadera1 .fotoMateMadera1 {
   width: 100%;
   height: auto;
   border-radius: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.textoMateDeVidrio {
+.contenedorMates .textoMateDeVidrio {
   background-color: #bd8b3f;
   padding: 20px;
   border-radius: 5px;
@@ -382,26 +456,42 @@ body {
   text-align: left;
 }
 
-.fotoMateDeVidrio {
+.contenedorMates .fotoMateDeVidrio {
   padding: 0;
   border-radius: 5px;
   -ms-grid-row: 5;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: fotoMateDeVidrio;
+}
+
+.contenedorMates .fotoMateDeVidrio .fotoMateDeVidrio:hover {
+  -webkit-transform: scale(1.08, 1.08);
+          transform: scale(1.08, 1.08);
+}
+
+.contenedorMates .fotoMateDeVidrio .fotoMateVidrio1 {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.fotoMateVidrio1 {
-  width: 100%;
-  height: auto;
+.contenedorMates footer {
+  background-color: #487240;
+  color: #b6a68d;
+  padding: 5px;
   border-radius: 5px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: pieDePagina;
+  text-align: center;
 }
 
-.fotoMateDeVidrio:hover {
-  -webkit-transform: scale(1.08, 1.08);
-          transform: scale(1.08, 1.08);
+.contenedorMates footer h3 {
+  font-size: 1.125rem;
 }
 
 /* CUARTA PAGINA CUIDADOS */
