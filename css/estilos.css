@@ -9,6 +9,10 @@ body {
   color: black;
 }
 
+h2 {
+  font-weight: bold;
+}
+
 /* PRIMERA PAGINA INDEX */
 .contenedor {
   width: 90%;
@@ -37,10 +41,6 @@ body {
   grid-area: titulo;
   background-image: -webkit-gradient(linear, left top, right top, from(#487240), to(#deb887));
   background-image: linear-gradient(to right, #487240, #deb887);
-}
-
-.contenedor header h2 {
-  font-weight: bold;
 }
 
 .contenedor main {
@@ -155,10 +155,6 @@ body {
   grid-area: titulo;
   background-image: -webkit-gradient(linear, left top, right top, from(#487240), to(#deb887));
   background-image: linear-gradient(to right, #487240, #deb887);
-}
-
-.contenedorNosotros header h2 {
-  font-weight: bold;
 }
 
 .contenedorNosotros aside {
@@ -321,10 +317,6 @@ body {
   grid-area: titulo;
   background-image: -webkit-gradient(linear, left top, right top, from(#487240), to(#deb887));
   background-image: linear-gradient(to right, #487240, #deb887);
-}
-
-.contenedorMates header h2 {
-  font-weight: bold;
 }
 
 .contenedorMates aside {
@@ -524,10 +516,6 @@ body {
   background-image: linear-gradient(to right, #487240, #deb887);
 }
 
-.contenedorCuidados header h2 {
-  font-weight: bold;
-}
-
 .contenedorCuidados aside {
   background-color: #487240;
   padding: 0;
@@ -693,10 +681,6 @@ body {
   grid-area: titulo;
   background-image: -webkit-gradient(linear, left top, right top, from(#487240), to(#deb887));
   background-image: linear-gradient(to right, #487240, #deb887);
-}
-
-.contenedorContacto header h2 {
-  font-weight: bold;
 }
 
 .contenedorContacto aside {
