@@ -52,7 +52,7 @@
         a{
             text-decoration: none;
             color: rgb(0, 0, 0);
-            transition: all 1s;
+            transition: all 0.5s;
         }
         a:hover{
             color: $card;
@@ -73,7 +73,7 @@
 @mixin prop-footer{
     footer{
         background-color: $fondo;
-        color: $card;
+        color: rgb(0, 0, 0);
         padding: 5px;
         border-radius: 5px;
         grid-area: pieDePagina;

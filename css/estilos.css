@@ -46,8 +46,8 @@ h2 {
 .contenedor header a {
   text-decoration: none;
   color: black;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .contenedor header a:hover {
@@ -125,7 +125,7 @@ h2 {
 
 .contenedor footer {
   background-color: #487240;
-  color: #bd8b3f;
+  color: black;
   padding: 5px;
   border-radius: 5px;
   -ms-grid-row: 3;
@@ -172,8 +172,8 @@ h2 {
 .contenedorNosotros header a {
   text-decoration: none;
   color: black;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .contenedorNosotros header a:hover {
@@ -299,7 +299,7 @@ h2 {
 
 .contenedorNosotros footer {
   background-color: #487240;
-  color: #bd8b3f;
+  color: black;
   padding: 5px;
   border-radius: 5px;
   -ms-grid-row: 3;
@@ -346,8 +346,8 @@ h2 {
 .contenedorMates header a {
   text-decoration: none;
   color: black;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .contenedorMates header a:hover {
@@ -508,7 +508,7 @@ h2 {
 
 .contenedorMates footer {
   background-color: #487240;
-  color: #bd8b3f;
+  color: black;
   padding: 5px;
   border-radius: 5px;
   -ms-grid-row: 3;
@@ -555,8 +555,8 @@ h2 {
 .contenedorCuidados header a {
   text-decoration: none;
   color: black;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .contenedorCuidados header a:hover {
@@ -687,7 +687,7 @@ h2 {
 
 .contenedorCuidados footer {
   background-color: #487240;
-  color: #bd8b3f;
+  color: black;
   padding: 5px;
   border-radius: 5px;
   -ms-grid-row: 3;
@@ -734,8 +734,8 @@ h2 {
 .contenedorContacto header a {
   text-decoration: none;
   color: black;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .contenedorContacto header a:hover {
@@ -815,7 +815,7 @@ h2 {
 
 .contenedorContacto footer {
   background-color: #487240;
-  color: #bd8b3f;
+  color: black;
   padding: 5px;
   border-radius: 5px;
   -ms-grid-row: 3;
