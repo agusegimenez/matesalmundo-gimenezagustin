@@ -45,13 +45,13 @@ h2 {
 
 .contenedor header a {
   text-decoration: none;
-  color: #bd8b3f;
-  -webkit-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  color: black;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .contenedor header a:hover {
-  color: black;
+  color: #bd8b3f;
 }
 
 .contenedor main {
@@ -95,7 +95,7 @@ h2 {
 }
 
 .contenedor aside li a {
-  color: #487240;
+  color: black;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.123rem;
@@ -107,6 +107,7 @@ h2 {
 .contenedor aside li a:hover {
   background-color: #bd8b3f;
   border-radius: 7px;
+  color: #487240;
 }
 
 .contenedor div {
@@ -124,7 +125,7 @@ h2 {
 
 .contenedor footer {
   background-color: #487240;
-  color: #b6a68d;
+  color: #bd8b3f;
   padding: 5px;
   border-radius: 5px;
   -ms-grid-row: 3;
@@ -170,13 +171,13 @@ h2 {
 
 .contenedorNosotros header a {
   text-decoration: none;
-  color: #bd8b3f;
-  -webkit-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  color: black;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .contenedorNosotros header a:hover {
-  color: black;
+  color: #bd8b3f;
 }
 
 .contenedorNosotros aside {
@@ -209,7 +210,7 @@ h2 {
 }
 
 .contenedorNosotros aside li a {
-  color: #487240;
+  color: black;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.123rem;
@@ -221,6 +222,7 @@ h2 {
 .contenedorNosotros aside li a:hover {
   background-color: #bd8b3f;
   border-radius: 7px;
+  color: #487240;
 }
 
 .contenedorNosotros main {
@@ -297,7 +299,7 @@ h2 {
 
 .contenedorNosotros footer {
   background-color: #487240;
-  color: #b6a68d;
+  color: #bd8b3f;
   padding: 5px;
   border-radius: 5px;
   -ms-grid-row: 3;
@@ -343,13 +345,13 @@ h2 {
 
 .contenedorMates header a {
   text-decoration: none;
-  color: #bd8b3f;
-  -webkit-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  color: black;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .contenedorMates header a:hover {
-  color: black;
+  color: #bd8b3f;
 }
 
 .contenedorMates aside {
@@ -382,7 +384,7 @@ h2 {
 }
 
 .contenedorMates aside li a {
-  color: #487240;
+  color: black;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.123rem;
@@ -394,6 +396,7 @@ h2 {
 .contenedorMates aside li a:hover {
   background-color: #bd8b3f;
   border-radius: 7px;
+  color: #487240;
 }
 
 .contenedorMates main {
@@ -505,7 +508,7 @@ h2 {
 
 .contenedorMates footer {
   background-color: #487240;
-  color: #b6a68d;
+  color: #bd8b3f;
   padding: 5px;
   border-radius: 5px;
   -ms-grid-row: 3;
@@ -551,13 +554,13 @@ h2 {
 
 .contenedorCuidados header a {
   text-decoration: none;
-  color: #bd8b3f;
-  -webkit-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  color: black;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .contenedorCuidados header a:hover {
-  color: black;
+  color: #bd8b3f;
 }
 
 .contenedorCuidados aside {
@@ -590,7 +593,7 @@ h2 {
 }
 
 .contenedorCuidados aside li a {
-  color: #487240;
+  color: black;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.123rem;
@@ -602,6 +605,7 @@ h2 {
 .contenedorCuidados aside li a:hover {
   background-color: #bd8b3f;
   border-radius: 7px;
+  color: #487240;
 }
 
 .contenedorCuidados main {
@@ -683,7 +687,7 @@ h2 {
 
 .contenedorCuidados footer {
   background-color: #487240;
-  color: #b6a68d;
+  color: #bd8b3f;
   padding: 5px;
   border-radius: 5px;
   -ms-grid-row: 3;
@@ -729,13 +733,13 @@ h2 {
 
 .contenedorContacto header a {
   text-decoration: none;
-  color: #bd8b3f;
-  -webkit-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  color: black;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .contenedorContacto header a:hover {
-  color: black;
+  color: #bd8b3f;
 }
 
 .contenedorContacto aside {
@@ -768,7 +772,7 @@ h2 {
 }
 
 .contenedorContacto aside li a {
-  color: #487240;
+  color: black;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.123rem;
@@ -780,6 +784,7 @@ h2 {
 .contenedorContacto aside li a:hover {
   background-color: #bd8b3f;
   border-radius: 7px;
+  color: #487240;
 }
 
 .contenedorContacto main {
@@ -810,7 +815,7 @@ h2 {
 
 .contenedorContacto footer {
   background-color: #487240;
-  color: #b6a68d;
+  color: #bd8b3f;
   padding: 5px;
   border-radius: 5px;
   -ms-grid-row: 3;
