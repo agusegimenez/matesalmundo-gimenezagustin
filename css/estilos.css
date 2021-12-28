@@ -43,6 +43,17 @@ h2 {
   background-image: linear-gradient(to right, #487240, #deb887);
 }
 
+.contenedor header a {
+  text-decoration: none;
+  color: #bd8b3f;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.contenedor header a:hover {
+  color: black;
+}
+
 .contenedor main {
   background-color: #bd8b3f;
   padding: 22px;
@@ -155,6 +166,17 @@ h2 {
   grid-area: titulo;
   background-image: -webkit-gradient(linear, left top, right top, from(#487240), to(#deb887));
   background-image: linear-gradient(to right, #487240, #deb887);
+}
+
+.contenedorNosotros header a {
+  text-decoration: none;
+  color: #bd8b3f;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.contenedorNosotros header a:hover {
+  color: black;
 }
 
 .contenedorNosotros aside {
@@ -317,6 +339,17 @@ h2 {
   grid-area: titulo;
   background-image: -webkit-gradient(linear, left top, right top, from(#487240), to(#deb887));
   background-image: linear-gradient(to right, #487240, #deb887);
+}
+
+.contenedorMates header a {
+  text-decoration: none;
+  color: #bd8b3f;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.contenedorMates header a:hover {
+  color: black;
 }
 
 .contenedorMates aside {
@@ -516,6 +549,17 @@ h2 {
   background-image: linear-gradient(to right, #487240, #deb887);
 }
 
+.contenedorCuidados header a {
+  text-decoration: none;
+  color: #bd8b3f;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.contenedorCuidados header a:hover {
+  color: black;
+}
+
 .contenedorCuidados aside {
   background-color: #487240;
   padding: 0;
@@ -681,6 +725,17 @@ h2 {
   grid-area: titulo;
   background-image: -webkit-gradient(linear, left top, right top, from(#487240), to(#deb887));
   background-image: linear-gradient(to right, #487240, #deb887);
+}
+
+.contenedorContacto header a {
+  text-decoration: none;
+  color: #bd8b3f;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.contenedorContacto header a:hover {
+  color: black;
 }
 
 .contenedorContacto aside {

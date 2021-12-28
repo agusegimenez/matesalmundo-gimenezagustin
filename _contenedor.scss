@@ -48,6 +48,14 @@
         border-radius: 5px;
         grid-area: titulo;
         background-image: linear-gradient(to right, $fondo, #deb887);
+        a{
+            text-decoration: none;
+            color: $card;
+            transition: all 1s ease 0s;
+        }
+        a:hover{
+            color: rgb(0, 0, 0);
+        }
     }
 }
 
